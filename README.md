@@ -1,40 +1,20 @@
-![image](https://github.com/user-attachments/assets/a18741c0-1789-4c45-b226-abc337da5e8f)# Product-Sales-Analysis-Project-For-Data-Analyst-Professional
-
+![image](https://github.com/user-attachments/assets/c9bb4484-c3cd-4f21-829c-15cad309087d)
 ---
 title: "Product_Sales_Analysis"
 author: "ERICK@Guru"
 date: "2023-07-029"
-output:
-  html_document:
-    df_print: paged
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 # Product Sales Analysis Project For Data Analyst Professional
-
-### Using the validation criteria, the following validation was made:
-
+## Using the validation criteria, the following validation was made:
 -   week: 6 unique values, without any missing data.
-
 -   sales_method: had 5 unique values before validation: Email, Call, Email + Call, em + call, and email, which after validation were Email, Call, and Email + Call.
-
 -   customer_id: 15,000 unique values. Needed no cleaning.
-
 -   nb_sold: 10 unique values, no cleaning required and no missing values.
-
 -   revenue: had 1074 missing values, of which the rows were removed from the data set.
-
 -   years_as_customer: had two major values not corresponding: 47 and 63 which were way more than the number of years Pens and Printers has been in existence, 39 years. It made no sense having a customer when the business was not in existence. These rows were dropped.
-
 -   nb_site_visits: Needed no cleaning.
-
 -   state: Needed no cleaning too. At the end of the validation and cleaning process, the data that remained is 13,924 rows and 8 columns
-
 ## Data Import, Validation, Cleaning, and Exploration
-
 ```{r warning=FALSE, message=FALSE}
 # install.packages("DataExplorer")
 # install.packages("timetk")
@@ -54,8 +34,7 @@ theme_set(theme_test())
 ```{r warning=FALSE, message=FALSE}
 library(readr)
 sales <- read_csv("product_sales.csv")
-
-head(sales)
+head(sales)#first 5 rows
 ```
 ![image](https://github.com/user-attachments/assets/5de8b150-63ef-42c9-b168-1c4edacc8e57)
 ```{r warning=FALSE, message=FALSE}
